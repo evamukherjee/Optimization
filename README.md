@@ -26,7 +26,19 @@ The minimization is performed using the Steepest Descent method with two differe
 * $x_0 = (0, 0)^\\top$
 * $\\tilde{x}_0 = (\\pi + 1, \\pi - 1)^\\top$
 
+## Algorithm: Steepest Descent
 
+The Steepest Descent method is an iterative optimization algorithm for finding the local minimum of a differentiable function. The update rule for the variable $x$ at each step $k$ is given by:
+
+$$x_{k+1}=x_{k}-\\alpha\\nabla f(x_{k}),$$
+
+where $\\alpha$ is the step size and $\\nabla f(x_{k})$ is the gradient of the objective function $f(x)$ at $x_k$. The iteration halts when the norm of the gradient $||\\nabla f(x)||$ is sufficiently close to zero, indicating convergence to a local minimum.
+
+## Files:
+
+* `Gradient Descent Algorithm.ipynb`: A Jupyter Notebook containing the Python implementation of the steepest descent algorithm, function definitions, gradient calculations, and the execution of the minimization process for both Rosenbrock's and Himmelblau's functions with different step sizes and starting points.
+ 
+* `Optimization Report.pdf`: A PDF report detailing the implementation, admissible errors, the results (including convergence behavior, number of iterations, CPU time, and sensitivity to parameters), and conclusion.
 
 
 
